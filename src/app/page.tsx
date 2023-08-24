@@ -1,13 +1,17 @@
 "use client";
 
-import { Center } from "@mantine/core";
+import { Center, Stack } from "@mantine/core";
 import { GoogleButton } from "@/components/GoogleButton";
+import { DictionaryForm } from "@/components/DictionaryForm";
 
 export default function Home() {
   return (
     <>
       <Center h="100vh">
-        <GoogleButton>Sign in with Google</GoogleButton>
+        <Stack>
+          <GoogleButton>Sign in with Google</GoogleButton>
+          <DictionaryForm />
+        </Stack>
       </Center>
     </>
   );
